@@ -81,3 +81,100 @@ body{
     margin-right:10px;
     color:#1a73e8;
 }
+/* Centering the entire edit area */
+.edit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.edit-card {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.edit-header {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f1f3f4;
+    padding-bottom: 15px;
+}
+
+.edit-header h2 {
+    margin: 0;
+    color: #202124;
+}
+
+.edit-header p {
+    margin: 5px 0 0;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+/* Label styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #3c4043;
+    font-size: 14px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Crucial for padding */
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #fbbc04;
+    outline: none;
+    background-color: #fffef7;
+}
+
+/* Button Styling */
+.edit-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.save-btn {
+    background: #fbbc04;
+    color: #202124;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.save-btn:hover {
+    background: #eab003;
+}
+
+.cancel-btn {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.cancel-btn:hover {
+    text-decoration: underline;
+}
